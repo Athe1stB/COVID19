@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">COVID19</string>
+    <string name="AUTHOR">BISWAJEET DAS</string>
+    <string name="created">Created with \u2764 by </string>
+    <string name="coronavirus">CORONAVIRUS</string>
+    <string name="about">ABOUT APP</string>
+    <string name="aboutdesc">This app spreads awareness about the novel CORONAVIRUS and also gives us updates about the current situation all over the world, all countries ad specifically india in a broader scale.\nEXPLORE EACH AND EVERY CORNER OF THE APP</string>
+    <string name="deaths">DEATHS </string>
+    <string name="preventio">PREVENTION </string>
+    <string name="sources">SOURCES </string>
+    <string name="contact">Contact Info </string>
+    <string name="media">NEWS </string>
+    <string name="load">CLICK TO LOAD PROFILE: </string>
+    <string name="helpline">CALL HELPLINE </string>
+    <string name="mail">biswajeet2001.15@gmail.com</string>
+    <string name="city">CITY </string>
+    <string name="guideline">GUIDELINE : While entering state and city keep first letters of each word capital. eg: Jharkhand , Himachal Pradesh, Andhra Pradesh etc .</string>
+    <string name="STATE">STATES </string>
+    <string name="stateedit">Enter state  </string>
+    <string name="cityedit">Enter city </string>
+    <string name="TOTAL">TOTAL </string>
+    <string name="info">INFO </string>
+    <string name="learn">Learn More ► </string>
+    <string name="feedback">FEEDBACK </string>
+    <string name="options">OPTIONS </string>
+    <string name="recovered">RECOVERED  </string>
+    <string name="confirmed">CONFIRMED</string>
+    <string name="symptoms">SYMPTOMS </string>
+    <string name="UPDATES">UPDATES </string>
+    <string name="dot">...</string>
+    <string name="updated_on">UPDATED ON</string>
+    <string name="moreinfo">MORE INFO</string>
+    <string name="zero">loading... </string>
+    <string name="search">SEARCH </string>
+    <string name="india">INDIA STATS </string>
+    <string name="citystats">CITY STATS </string>
+    <string name="world">WORLD STATS </string>
+    <string name="hint">ENTER COUNTRY NAME</string>
+    <string name="random">COUNTRY STATS </string>
+    <string name="credits">CREDITS </string>
+    <string name="sourcestext">The coronavirus - known as COVID-19 - spreads from person to person in close proximity, similar to other respiratory illnesses, such as the flu.\n\n
+Droplets of bodily fluids - such as saliva or mucus - from an infected person are dispersed in the air or on surfaces by coughing or sneezing.
+These droplets can come into direct contact with other people or can infect those who pick them up by touching infected surfaces and then their face.\n\n
+According to scientists, coughs and sneezes can travel several feet and stay suspended in the air for up to 10 minutes.
+It is not yet known how long the virus can survive outside a host but, in other viruses, it ranges from a few hours to months.\n\n
+Transmission is of particular concern on transport, where droplets containing the coronavirus could pass between passengers or via surfaces like aeroplane seats and armrests.\n\n
+The incubation period of the coronavirus, the length of time before symptoms appear, is between one and 14 days.
+Although not yet confirmed, Chinese health authorities believe the virus can be transmitted before symptoms appear.</string>
+
+    <string name="infotext1">Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</string>
+    <string name="infotext2">COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many countries globally.</string>
+    <string name="sympstr1">COVID-19 affects different people in different ways. Most infected people will develop mild to moderate symptoms.\n\nCommon symptoms:</string>
+    <string name="sympstr2">
+        \t\u2022 FEVER\n\u2022 TIREDNESS\n\u2022 DRY COUGH\n\u2022 ACHES AN PAINS\n\u2022 NASAL CONGESTION\n\u2022 RUNNY NOSE\n\u2022 SORE THROAT\n\u2022 DIARRHOEA
+      </string>
+    <string name="sympstr3">On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.\n
+People with mild symptoms who are otherwise healthy should self-isolate. Seek medical attention if you have a fever, a cough, and difficulty breathing. Call ahead.
+</string>
+
+    <string name="prestr1">Protect yourself and others around you by knowing the facts and taking appropriate precautions.\nFollow advice provided by your local public health agency.</string>
+    <string name="prestr2">
+        \u2022\tClean your hands often. Use soap and water, or an alcohol-based hand rub.\n\n\u2022Maintain a safe distance from anyone who is coughing or sneezing.\n\n
+        \u2022Don’t touch your eyes, nose or mouth.\n\n
+        \u2022Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.\n\n
+        \u2022Stay home if you feel unwell.\n\n
+        \u2022If you have a fever, a cough, and difficulty breathing, seek medical attention. Call in advance.\n\n
+        \u2022Follow the directions of your local health authority.
+      </string>
+    <string name="prestr3">Avoiding unneeded visits to medical facilities allows healthcare systems to operate more effectively, therefore protecting you and others.</string>
+
+    <string name="active">ACTIVE</string>
+</resources>

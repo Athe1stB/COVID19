@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/blue">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/card">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="215dp"
+            android:padding="16dp"
+            android:src="@drawable/covid19_logo" />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:paddingTop="12dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <FrameLayout
+                style="@style/maincard">
+                    <LinearLayout
+                        android:id="@+id/info"
+                        style="@style/maincardcontent">
+                        <ImageView
+                          style="@style/iconmain"
+                            android:src="@drawable/info256"/>
+                        <TextView
+                            style="@style/text"
+                            android:text="@string/info"
+                            android:paddingBottom="0dp"/>
+                    </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/maincard">
+                <LinearLayout
+                    android:id="@+id/sources"
+                    style="@style/maincardcontent">
+                    <ImageView
+                        style="@style/iconmain"
+                        android:src="@drawable/sources100"/>
+                    <TextView
+                        style="@style/text"
+                        android:text="@string/sources"
+                        android:paddingBottom="0dp"/>
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:orientation="horizontal">
+            <FrameLayout
+                style="@style/maincard">
+                <LinearLayout
+                    android:id="@+id/symptoms"
+                    style="@style/maincardcontent">
+                    <ImageView
+                        style="@style/iconmain"
+                        android:src="@drawable/virus80"/>
+                    <TextView
+                        style="@style/text"
+                        android:text="@string/symptoms"
+                        android:paddingBottom="0dp"/>
+                 </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/maincard">
+                <LinearLayout
+                    android:id="@+id/measures"
+                    style="@style/maincardcontent">
+                    <ImageView
+                        style="@style/iconmain"
+                        android:src="@drawable/preven80"/>
+                    <TextView
+                        style="@style/text"
+                        android:text="@string/preventio"
+                        android:paddingBottom="0dp"/>
+                 </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="horizontal">
+        <FrameLayout
+            style="@style/maincard">
+            <LinearLayout
+                android:id="@+id/updates"
+                style="@style/maincardcontent">
+                <ImageView
+                    style="@style/iconmain"
+                    android:src="@drawable/combochart100"/>
+                <TextView
+                    style="@style/text"
+                    android:text="@string/UPDATES"
+                    android:paddingBottom="0dp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <FrameLayout
+            style="@style/maincard">
+            <LinearLayout
+                android:id="@+id/media"
+                style="@style/maincardcontent">
+                <ImageView
+                    style="@style/iconmain"
+                    android:src="@drawable/news192"/>
+                <TextView
+                    style="@style/text"
+                    android:text="@string/media"
+                    android:paddingBottom="0dp"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="horizontal">
+        <FrameLayout
+            style="@style/maincard">
+            <LinearLayout
+                android:id="@+id/helpline"
+                style="@style/maincardcontent">
+                <ImageView
+                    style="@style/iconmain"
+                    android:src="@drawable/phone100"/>
+                <TextView
+                    style="@style/text"
+                    android:text="@string/helpline"
+                    android:paddingBottom="0dp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/maincard">
+            <LinearLayout
+                android:id="@+id/feedback"
+                style="@style/maincardcontent">
+                <ImageView
+                    style="@style/iconmain"
+                    android:src="@drawable/feedback100"/>
+                <TextView
+                    style="@style/text"
+                    android:text="@string/feedback"
+                    android:paddingBottom="0dp"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue">
+    <FrameLayout
+        style="@style/maincard">
+        <LinearLayout
+            android:id="@+id/credits"
+            style="@style/maincardcontent"
+            android:orientation="horizontal">
+                <TextView
+                    style="@style/text"
+                    android:text="@string/created"
+                    android:paddingBottom="0dp"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/blankplay"
+                    android:layout_marginStart="10dp"/>
+            </LinearLayout>
+    </FrameLayout>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

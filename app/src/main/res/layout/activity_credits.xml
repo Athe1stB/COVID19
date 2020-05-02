@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".credits">
+    <TextView
+        style="@style/card1"
+        android:text="@string/created"/>
+    <TextView
+        android:id="@+id/author"
+        android:padding="16dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AUTHOR"/>
+    <TextView
+        style="@style/card1"
+        android:text="@string/contact"/>
+    <TextView
+        style="@style/card1"
+        android:text="@string/mail"
+        android:textColor="@color/green"
+        android:textAllCaps="false"
+        android:paddingBottom="12dp"/>
+
+    <TextView
+        style="@style/card1"
+        android:text="@string/load"
+        android:paddingTop="12dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="12dp"
+            android:background="@drawable/instagram">
+        <ImageView
+            android:id="@+id/insta"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?android:selectableItemBackground"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/facebook128"
+            android:padding="12dp">
+            <ImageView
+                android:id="@+id/fb"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="?android:selectableItemBackground"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

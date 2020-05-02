@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="12dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/titlemedia"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        style="@style/card2"/>
+
+        <ImageView
+            android:id="@+id/imgviewnews"
+            android:layout_width="match_parent"
+            android:src="@drawable/redlogo"
+            android:layout_height="200dp"/>
+
+    <TextView
+        style="@style/card1"
+        android:text="@string/learn"
+        android:textColor="@color/blue"
+        android:textStyle="bold"/>
+
+    <TextView
+    android:id="@+id/updatedmedia"
+        android:layout_gravity="end"
+    style="@style/card1"/>
+</LinearLayout>

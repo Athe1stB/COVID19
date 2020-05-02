@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moreinfoWorld"
+    android:background="@color/mag10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            tools:context="com.example.covid19.updates">
+            <TextView
+                style="@style/textbox"
+                android:text="@string/random"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint"
+                android:textAppearance="?android:textAppearanceSmall"/>
+                <ImageView
+                    android:id="@+id/flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search" /></LinearLayout>
+            <TextView
+                android:id="@+id/updated3"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:textColor="@color/lightgray"
+                android:layout_gravity="end"
+                style="@style/card2"/>
+
+            <LinearLayout
+                android:id="@+id/activell3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/LinearlCard"
+                    android:background="@drawable/card">
+                    <TextView
+                        style="@style/card1"
+                        android:text="@string/confirmed"/>
+
+                    <TextView
+                        android:id="@+id/confirmed3"
+                        style="@style/card2"
+                        android:textColor="@color/orange"/>
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/LinearlCard"
+                    android:background="@drawable/card">
+                    <TextView
+                        style="@style/card1"
+                        android:text="@string/active"/>
+
+                    <TextView
+                        android:id="@+id/active3"
+                        style="@style/card2"
+                        android:textColor="@color/yellow"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/deathll3"
+                    style="@style/LinearlCard"
+                    android:background="@drawable/card">
+                    <TextView
+                        style="@style/card1"
+                        android:text="@string/deaths"/>
+
+                    <TextView
+                        android:id="@+id/death3"
+                        style="@style/card2"
+                        android:textColor="@color/colorPrimaryDark"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/recoveredll3"
+                    style="@style/LinearlCard"
+                    android:background="@drawable/card">
+                    <TextView
+                        style="@style/card1"
+                        android:text="@string/recovered"/>
+
+                    <TextView
+                        android:id="@+id/recovered3"
+                        style="@style/card2"
+                        android:textColor="@color/green"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

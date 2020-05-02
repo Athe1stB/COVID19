@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pre1"
+            style="@style/textbox"
+            android:textAllCaps="false"
+            android:gravity="start"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/pre2"
+            android:paddingTop="24dp"
+            android:text="@string/prestr1"/>
+        <TextView
+            android:id="@+id/pre2"
+            style="@style/textbox"
+            android:textAllCaps="false"
+            android:gravity="start"
+            app:layout_constraintTop_toBottomOf="@id/pre1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/pre3"
+
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:textColor="@color/green"
+            android:text="@string/prestr2"/>
+        <TextView
+        android:id="@+id/pre3"
+        style="@style/textbox"
+        android:textAllCaps="false"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/pre2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingTop="24dp"
+        android:textColor="@color/gray"
+        android:text="@string/prestr3"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

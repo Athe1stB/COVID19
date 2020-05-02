@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.covid19">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/redlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/redlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".credits"
+            android:label="@string/credits">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".optionIndia" />
+
+        </activity>
+        <activity
+            android:name=".city"
+            android:label="city">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".optionIndia" />
+        </activity>
+        <activity
+            android:name=".optionIndia"
+            android:label="@string/options">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".updates" />
+        </activity>
+        <activity
+            android:name=".randomstats"
+            android:label="@string/random">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".optionWorld" />
+        </activity>
+        <activity
+            android:name=".optionWorld"
+            android:label="@string/options">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".updates" />
+        </activity>
+        <activity
+            android:name=".moreinfoWorld"
+            android:label="@string/moreinfo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".optionWorld" />
+        </activity>
+        <activity
+            android:name=".moreinfoIndia"
+            android:label="@string/STATE">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".optionIndia" />
+        </activity>
+        <activity
+            android:name=".source"
+            android:label="@string/sources">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".info"
+            android:label="@string/info"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".media"
+            android:label="@string/media"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".measures"
+            android:label="@string/preventio">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".symptoms"
+            android:label="@string/symptoms">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".updates"
+            android:label="@string/UPDATES">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

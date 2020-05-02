@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:id="@+id/symptomsll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".symptoms"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/infotext"
+        style="@style/textbox"
+        android:text="@string/sympstr1"
+        android:paddingTop="26dp"
+        android:gravity="start"
+        android:textAllCaps="false"/>
+    <TextView
+        android:id="@+id/infotext2"
+        style="@style/textbox"
+        android:text="@string/sympstr2"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:textColor="@color/mag10"
+        android:textAllCaps="false"/>
+    <TextView
+        android:id="@+id/infotext3"
+        style="@style/textbox"
+        android:text="@string/sympstr3"
+        android:gravity="start"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>
+</ScrollView>

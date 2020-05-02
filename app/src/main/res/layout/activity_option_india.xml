@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".optionWorld">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/redlogo"/>
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bluecard">
+    <TextView
+        android:id="@+id/statewise"
+        style="@style/card2"
+        android:background="?android:selectableItemBackground"
+        android:padding="6dp"
+        android:textColor="@color/white" />
+</FrameLayout>
+
+    <TextView
+        android:id="@+id/statewisedesc"
+        style="@style/card1"
+        android:textColor="@color/gray"
+        android:paddingBottom="24dp"
+        android:textAllCaps="false"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bluecard">
+    <TextView
+        android:id="@+id/district"
+        style="@style/card2"
+        android:background="?android:selectableItemBackground"
+        android:padding="6dp"
+        android:textColor="@color/white"  />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/districtdesc"
+        style="@style/card1"
+        android:textColor="@color/gray"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
