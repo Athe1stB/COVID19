@@ -2,7 +2,7 @@
 <ScrollView android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/blue">
+    android:background="@drawable/backroot">
 
     <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +21,6 @@
 </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:background="@color/blue"
             android:paddingTop="12dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -60,7 +59,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/blue"
             android:orientation="horizontal">
             <FrameLayout
                 style="@style/maincard">
@@ -96,7 +94,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/blue"
         android:orientation="horizontal">
         <FrameLayout
             style="@style/maincard">
@@ -134,7 +131,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/blue"
         android:orientation="horizontal">
         <FrameLayout
             style="@style/maincard">
@@ -169,8 +165,7 @@
 
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/blue">
+    android:layout_height="wrap_content">
     <FrameLayout
         style="@style/maincard">
         <LinearLayout

@@ -19,6 +19,7 @@
             android:src="@drawable/redlogo"
             android:layout_height="200dp"/>
 
+
     <TextView
         style="@style/card1"
         android:text="@string/learn"

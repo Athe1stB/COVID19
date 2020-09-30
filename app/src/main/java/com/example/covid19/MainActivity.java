@@ -74,13 +74,11 @@ public class MainActivity extends AppCompatActivity {
         t7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mail = new Intent(Intent.ACTION_SEND);
-                mail.putExtra(Intent.EXTRA_EMAIL,new String[]{"iit2019019@iiita.ac.in"});
-                mail.putExtra(Intent.EXTRA_SUBJECT,"FEEDBACK REGARDING COVID19 APP");
-                mail.putExtra(Intent.EXTRA_TEXT,"");
-
-                mail.setType("message/rfc822");
-                startActivity(Intent.createChooser(mail,"CHOOSE MAIL RECIEPENT: "));
+                String uritext = "mailto:iit2019019@gmail.com"+"?subject="+Uri.encode("FEEDBACK REGARDING COVID19")+"&body="+Uri.encode("FEEDBACK/suggestions/review");
+                Uri uri = Uri.parse(uritext);
+                Intent mail = new Intent(Intent.ACTION_SENDTO);
+                mail.setData(uri);
+                startActivity(Intent.createChooser(mail,"Send FEEDBACK:"));
             }
         });
 

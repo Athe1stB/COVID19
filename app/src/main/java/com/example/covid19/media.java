@@ -10,7 +10,10 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.ProgressBar;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -70,7 +73,12 @@ public class media extends AppCompatActivity {
 
 
 
-    private class newsStats extends AsyncTask<URL, Void, ArrayList<cases>> {
+    private class newsStats extends AsyncTask<URL, Integer, ArrayList<cases>> {
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+        }
 
         @Override
         protected ArrayList<cases> doInBackground(URL... urls) {
@@ -90,6 +98,8 @@ public class media extends AppCompatActivity {
 
             return recent;
         }
+
+
 
         @Override
         protected void onPostExecute(ArrayList<cases> list) {

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -19,6 +20,7 @@ import java.util.ArrayList;
 
 public class mediaAdapter extends ArrayAdapter<cases> {
 
+    private View view;
     public String format(String s)
     {
         String s1="" ,s2="" ,s3="";
@@ -38,7 +40,7 @@ public class mediaAdapter extends ArrayAdapter<cases> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
 
-        View view = convertView;
+        view = convertView;
         if(view == null){
             view = LayoutInflater.from(getContext()).inflate(R.layout.activity_media,parent,false);
         }
@@ -50,6 +52,7 @@ public class mediaAdapter extends ArrayAdapter<cases> {
         updated = format(cur.date);
         url = cur.murl;
 
+
         TextView media = view.findViewById(R.id.titlemedia);
         media.setText(title);
 
@@ -58,9 +61,11 @@ public class mediaAdapter extends ArrayAdapter<cases> {
 
         ImageView image = view.findViewById(R.id.imgviewnews);
 
+
         if (cur != null) {
             new DownloadImageTask(image).execute(cur.getmImgurl());
         }
+
 
 
 
@@ -70,7 +75,7 @@ public class mediaAdapter extends ArrayAdapter<cases> {
 
 
 
-    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
+    private class DownloadImageTask extends AsyncTask<String, Integer, Bitmap> {
         ImageView bmImage;
         public DownloadImageTask(ImageView bmImage) {
             this.bmImage = bmImage;
@@ -88,6 +93,8 @@ public class mediaAdapter extends ArrayAdapter<cases> {
             }
             return bmp;
         }
+
+
         protected void onPostExecute(Bitmap result) {
             bmImage.setImageBitmap(result);
         }

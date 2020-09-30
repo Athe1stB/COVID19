@@ -21,7 +21,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/card"
+            android:background="@drawable/graycard"
             android:orientation="vertical"
             android:gravity="center"
             android:padding="12dp"
@@ -30,15 +30,18 @@
             <TextView
                 style="@style/textbox"
                 android:text="@string/random"
+                android:textStyle="bold"
                 android:textColor="@color/black"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="horizontal">
             <EditText
                 android:id="@+id/edit"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:hint="@string/hint"
                 android:textAppearance="?android:textAppearanceSmall"/>
                 <ImageView
@@ -46,11 +49,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/search" /></LinearLayout>
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/search" />
+                <ImageView
+                    android:id="@+id/flagimg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/graycard"/>
+                </LinearLayout>
+
             <TextView
                 android:id="@+id/updated3"
                 android:textSize="12sp"
@@ -68,7 +78,7 @@
 
                 <LinearLayout
                     style="@style/LinearlCard"
-                    android:background="@drawable/card">
+                    android:background="@drawable/graycard">
                     <TextView
                         style="@style/card1"
                         android:text="@string/confirmed"/>
@@ -76,11 +86,12 @@
                     <TextView
                         android:id="@+id/confirmed3"
                         style="@style/card2"
+                        android:text="@string/dot"
                         android:textColor="@color/orange"/>
                 </LinearLayout>
                 <LinearLayout
                     style="@style/LinearlCard"
-                    android:background="@drawable/card">
+                    android:background="@drawable/graycard">
                     <TextView
                         style="@style/card1"
                         android:text="@string/active"/>
@@ -88,6 +99,7 @@
                     <TextView
                         android:id="@+id/active3"
                         style="@style/card2"
+                        android:text="@string/dot"
                         android:textColor="@color/yellow"/>
                 </LinearLayout>
 
@@ -104,7 +116,7 @@
                 <LinearLayout
                     android:id="@+id/deathll3"
                     style="@style/LinearlCard"
-                    android:background="@drawable/card">
+                    android:background="@drawable/graycard">
                     <TextView
                         style="@style/card1"
                         android:text="@string/deaths"/>
@@ -112,12 +124,13 @@
                     <TextView
                         android:id="@+id/death3"
                         style="@style/card2"
+                        android:text="@string/dot"
                         android:textColor="@color/colorPrimaryDark"/>
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/recoveredll3"
                     style="@style/LinearlCard"
-                    android:background="@drawable/card">
+                    android:background="@drawable/graycard">
                     <TextView
                         style="@style/card1"
                         android:text="@string/recovered"/>
@@ -125,6 +138,7 @@
                     <TextView
                         android:id="@+id/recovered3"
                         style="@style/card2"
+                        android:text="@string/dot"
                         android:textColor="@color/green"/>
                 </LinearLayout>
 

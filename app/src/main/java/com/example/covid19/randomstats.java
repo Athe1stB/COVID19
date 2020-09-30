@@ -2,6 +2,10 @@ package com.example.covid19;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -9,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -59,7 +64,7 @@ public class randomstats extends AppCompatActivity {
 
 
     private void updateworldUi(cases recent) {
-        String active , recovered, deaths,conf,delconf,deldeaths;
+        String active , recovered, deaths,conf,delconf,deldeaths,s="Updated few seconds ago...";
         conf = Long.toString(recent.confirmed);
         active = Long.toString(recent.active);
         recovered = Long.toString(recent.recovered);
@@ -79,11 +84,15 @@ public class randomstats extends AppCompatActivity {
 
 
         TextView updat = (TextView) findViewById(R.id.updated3);
-        updat.setText(recent.date);
+        updat.setText(s);
+
+        ImageView image = findViewById(R.id.flagimg);
+
+        if (recent != null) {
+            new taskdownloader(image).execute(recent.date);
+        }
     }
-
-
-    private class randomCountryStats extends AsyncTask<URL, Void, cases> {
+    public class randomCountryStats extends AsyncTask<URL, Void, cases> {
 
         @Override
         protected cases doInBackground(URL... urls) {
@@ -189,10 +198,12 @@ public class randomstats extends AppCompatActivity {
                     JSONObject country = root.getJSONObject(i);
                     String curcountry = country.getString("country");
                     if(curcountry.compareToIgnoreCase(country_name)==0){
-                         conf1 =country.getLong("cases");
-                         active1 =country.getLong("active");
-                         recovered1 =country.getLong("recovered");
-                         death1 =country.getLong("deaths");
+                        JSONObject countryinfo = country.getJSONObject("countryInfo");
+                        updated1 = countryinfo.getString("flag");
+                        conf1 =country.getLong("cases");
+                        active1 =country.getLong("active");
+                        recovered1 =country.getLong("recovered");
+                        death1 =country.getLong("deaths");
                         break;
                     }
                 }
@@ -209,4 +220,33 @@ public class randomstats extends AppCompatActivity {
         }
     }
 
-}
+    private class taskdownloader extends AsyncTask<String, Void, Bitmap> {
+        ImageView bmImage;
+        public taskdownloader(ImageView bmImage) {
+            this.bmImage = bmImage;
+        }
+
+        protected Bitmap doInBackground(String... urls) {
+            String urldisplay = urls[0];
+            Bitmap bmp = null;
+            try {
+                InputStream in = new java.net.URL(urldisplay).openStream();
+                bmp = BitmapFactory.decodeStream(in);
+            } catch (Exception e) {
+                Log.e("Error", e.getMessage());
+                e.printStackTrace();
+            }
+            return bmp;
+        }
+        protected void onPostExecute(Bitmap result) {
+            bmImage.setImageBitmap(result);
+        }
+    }
+
+
+    }
+
+
+
+
+

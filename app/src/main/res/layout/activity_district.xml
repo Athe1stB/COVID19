@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@color/mag10">
 
@@ -84,12 +84,14 @@
             <TextView
                 android:id="@+id/distconfirmed"
                 style="@style/card2"
-                android:textColor="@color/orange"/>
+                android:textColor="@color/orange"
+                android:text="@string/dot"/>
             <TextView
                 android:id="@+id/distdelconfirmed"
                 style="@style/card2"
                 android:textColor="@color/orange"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="@string/dot"
                 android:textStyle="normal"/>
         </LinearLayout>
 
@@ -103,12 +105,14 @@
             <TextView
                 android:id="@+id/distactive"
                 style="@style/card2"
-                android:textColor="@color/mag4"/>
+                android:textColor="@color/mag4"
+                android:text="@string/dot"/>
             <TextView
                 android:id="@+id/distdelactive"
                 style="@style/card2"
                 android:textColor="@color/mag4"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="@string/dot"
                 android:textStyle="normal"/>
         </LinearLayout>
 
@@ -132,12 +136,14 @@
             <TextView
                 android:id="@+id/distdeath"
                 android:textColor="@color/colorPrimaryDark"
+                android:text="@string/dot"
                 style="@style/card2"/>
             <TextView
                 android:id="@+id/distdeldeath"
                 style="@style/card2"
                 android:textColor="@color/colorPrimaryDark"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="@string/dot"
                 android:textStyle="normal"/>
         </LinearLayout>
         <LinearLayout
@@ -151,11 +157,13 @@
             <TextView
                 android:id="@+id/distrecovered"
                 android:textColor="@color/green"
+                android:text="@string/dot"
                 style="@style/card2"/>
             <TextView
                 android:id="@+id/distdelrecovered"
                 style="@style/card2"
                 android:textColor="@color/green"
+                android:text="@string/dot"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textStyle="normal"/>
         </LinearLayout>

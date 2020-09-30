@@ -32,6 +32,44 @@ public class city extends AppCompatActivity {
     private static final String USGS_REQUEST_URL =
             "https://api.covid19india.org/state_district_wise.json";
     String district_name,state_name;
+    public String format(String s4)
+    {
+        String s;
+        s=s4.trim();
+        int i,n,j;
+        String s1="",s2="",s3="";
+        n=s.length();
+        s=s.toLowerCase();
+
+        for(i=0;i<n;i++)
+        {
+            char ch = s.charAt(i);
+
+            if(ch!= ' ')
+                s1 = s1 + ch;
+
+            else
+            {
+                if(s1.compareToIgnoreCase("and")!=0)
+                {
+                    char nn, i0 = s1.charAt(0);
+                    nn =Character.toUpperCase(i0);
+                    int m = s1.length();
+                    s3 = nn + s1.substring(1,m);
+                }
+
+                else
+                    s3 =s1;
+
+                s2= s2 +s3+ " ";
+                s1="";
+
+            }
+        }
+        Log.v("format",s2);
+        return s2;
+    }
+
 
 
 
@@ -51,6 +89,7 @@ public class city extends AppCompatActivity {
                 s1 = e1.getText().toString();
                 EditText e2 = findViewById(R.id.distedit);
                 s2 = e2.getText().toString();
+
                 state_name = s1.trim();
                 district_name = s2.trim();
 
